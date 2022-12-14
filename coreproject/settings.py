@@ -100,20 +100,20 @@ CORS_ORIGIN_ALLOW_ALL = True
 #     'http://127.0.0.1',
 # ]
 
-CORS_ALLOWED_ORIGINS = 'https://qrcodeapp.up.railway.app'
+CORS_ALLOWED_ORIGINS = ['https://qrcodeapp.up.railway.app', ]
 
 # CSRF_TRUSTED_ORIGINS = [
 #     'http://localhost:9000',
 
 # ]
 
-CSRF_TRUSTED_ORIGINS = 'https://qrcodeapp.up.railway.app'
+CSRF_TRUSTED_ORIGINS = ['https://qrcodeapp.up.railway.app', ]
 
 # CORS_ORIGIN_WHITELIST = [
 #     'http://localhost:9000',
 # ]
 
-CORS_ORIGIN_WHITELIST = 'https://qrcodeapp.up.railway.app'
+CORS_ORIGIN_WHITELIST = ['https://qrcodeapp.up.railway.app', ]
 
 
 REST_FRAMEWORK = {
