@@ -22,14 +22,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = 'DU4+=O{lyJHY&qFIi5@fmsB%ecFYsFRV,kAa5J/xrnLNrN-XpE8xY+gJyArx5=S3n375c!TtzBVoch^5sTcbVG4ehuq)J7G1wcOjXz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG_VALUE') == 'True'
-
+# DEBUG = os.getenv('DEBUG_VALUE') == 'True'
+DEBUG = True
 # ALLOWED_HOSTS = ['nest-srm.up.railway.app', '127.0.0.1']
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(',')
-
+# ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(',')
+ALLOWED_HOSTS = 'https://qrcodeapp.up.railway.app'
 
 # Application definition
 
@@ -100,20 +100,20 @@ CORS_ORIGIN_ALLOW_ALL = True
 #     'http://127.0.0.1',
 # ]
 
-CORS_ALLOWED_ORIGINS = os.getenv('ALLOWED_HOSTS').split(',')
+CORS_ALLOWED_ORIGINS = 'https://qrcodeapp.up.railway.app'
 
 # CSRF_TRUSTED_ORIGINS = [
 #     'http://localhost:9000',
 
 # ]
 
-CSRF_TRUSTED_ORIGINS = os.getenv('ALLOWED_HOSTS').split(',')
+CSRF_TRUSTED_ORIGINS = 'https://qrcodeapp.up.railway.app'
 
 # CORS_ORIGIN_WHITELIST = [
 #     'http://localhost:9000',
 # ]
 
-CORS_ORIGIN_WHITELIST = os.getenv('ALLOWED_HOSTS').split(',')
+CORS_ORIGIN_WHITELIST = 'https://qrcodeapp.up.railway.app'
 
 
 REST_FRAMEWORK = {
@@ -162,12 +162,12 @@ WSGI_APPLICATION = 'coreproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': os.getenv('ENGINE'),
-        'NAME': os.getenv('NAME'),
-        'USER': os.getenv('USER'),
-        'PASSWORD': os.getenv('PASSWORD'),
-        'HOST': os.getenv('HOST'),
-        'PORT': os.getenv('PORT'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'wWzGP1Hvd5nMvxle9mM0',
+        'HOST': 'containers-us-west-161.railway.app',
+        'PORT': '6485',
     },
 
 }
@@ -179,7 +179,7 @@ DATABASES = {
 #     }
 # }
 
-print(os.getenv('PORT'))
+# print(os.getenv('PORT'))
 
 
 # Password validation
