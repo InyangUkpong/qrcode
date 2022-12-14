@@ -29,7 +29,7 @@ SECRET_KEY = 'DU4+=O{lyJHY&qFIi5@fmsB%ecFn375c!TtzBVoch^5sTcbVG4ehuq)J7G1wcOjXz'
 DEBUG = True
 # ALLOWED_HOSTS = ['nest-srm.up.railway.app', '127.0.0.1']
 # ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(',')
-ALLOWED_HOSTS = 'https://qrcodeapp.up.railway.app'
+ALLOWED_HOSTS = ['https://qrcodeapp.up.railway.app', ]
 
 # Application definition
 
